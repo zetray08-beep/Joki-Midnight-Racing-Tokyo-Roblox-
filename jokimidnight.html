@@ -1,0 +1,1766 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Midnight Joki | Midnight Racing Tokyo</title>
+
+  <meta
+    name="description"
+    content="Jasa joki Midnight Racing Tokyo Roblox. 1M Rp8.000, 5M Rp40.000, 10M Rp80.000."
+  >
+
+  <style>
+    /* ================================
+       RESET
+    ================================= */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    :root {
+      --bg: #050509;
+      --bg2: #090910;
+      --card: #101018;
+      --card-hover: #151520;
+
+      --red: #ff1744;
+      --red2: #ff003c;
+      --pink: #ff4081;
+
+      --white: #ffffff;
+      --gray: #a8a8b5;
+      --gray2: #70707c;
+
+      --green: #25d366;
+
+      --border: rgba(255,255,255,0.08);
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--white);
+      background:
+        radial-gradient(
+          circle at 20% 10%,
+          rgba(255, 23, 68, 0.13),
+          transparent 30%
+        ),
+        radial-gradient(
+          circle at 80% 80%,
+          rgba(128, 0, 255, 0.10),
+          transparent 30%
+        ),
+        var(--bg);
+
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+      font-family: inherit;
+    }
+
+
+    /* ================================
+       NAVBAR
+    ================================= */
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+
+      width: 100%;
+      z-index: 999;
+
+      background: rgba(5, 5, 9, 0.82);
+      backdrop-filter: blur(15px);
+
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-container {
+      max-width: 1100px;
+      margin: auto;
+
+      padding: 17px 25px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 21px;
+      font-weight: 900;
+      letter-spacing: 1px;
+    }
+
+    .logo span {
+      color: var(--red);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #ddd;
+
+      font-size: 14px;
+      font-weight: 600;
+
+      transition: 0.25s;
+    }
+
+    .nav-links a:hover {
+      color: var(--red);
+    }
+
+
+    /* ================================
+       HERO
+    ================================= */
+
+    .hero {
+      min-height: 100vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      text-align: center;
+
+      padding: 130px 20px 90px;
+
+      position: relative;
+      overflow: hidden;
+
+      background:
+        linear-gradient(
+          rgba(5,5,9,0.65),
+          rgba(5,5,9,0.97)
+        );
+    }
+
+    /* garis dekorasi */
+
+    .hero::before {
+      content: "";
+
+      position: absolute;
+
+      width: 600px;
+      height: 600px;
+
+      border-radius: 50%;
+
+      background: rgba(255,23,68,0.09);
+
+      filter: blur(80px);
+
+      top: -250px;
+      left: 50%;
+
+      transform: translateX(-50%);
+    }
+
+    .hero-content {
+      max-width: 850px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .badge {
+      display: inline-block;
+
+      padding: 9px 17px;
+
+      border-radius: 50px;
+
+      color: #ff7895;
+
+      background: rgba(255,23,68,0.08);
+
+      border: 1px solid rgba(255,23,68,0.35);
+
+      font-size: 12px;
+      font-weight: 700;
+
+      margin-bottom: 22px;
+    }
+
+    .hero h1 {
+      font-size: clamp(48px, 9vw, 100px);
+
+      line-height: 0.9;
+
+      font-weight: 1000;
+
+      letter-spacing: -4px;
+
+      text-transform: uppercase;
+
+      text-shadow:
+        0 0 25px rgba(255,23,68,0.18);
+    }
+
+    .hero h1 span {
+      color: var(--red);
+    }
+
+    .hero p {
+      max-width: 650px;
+
+      margin: 28px auto;
+
+      color: var(--gray);
+
+      line-height: 1.7;
+
+      font-size: 15px;
+    }
+
+    .hero-buttons {
+      display: flex;
+
+      justify-content: center;
+
+      gap: 12px;
+
+      flex-wrap: wrap;
+    }
+
+
+    /* ================================
+       BUTTON
+    ================================= */
+
+    .btn {
+      display: inline-flex;
+
+      align-items: center;
+      justify-content: center;
+
+      padding: 13px 22px;
+
+      border-radius: 8px;
+
+      border: none;
+
+      text-decoration: none;
+
+      font-size: 14px;
+
+      font-weight: 800;
+
+      cursor: pointer;
+
+      transition: 0.25s;
+    }
+
+    .btn-primary {
+      color: white;
+
+      background: var(--red);
+
+      box-shadow:
+        0 8px 25px rgba(255,23,68,0.2);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+
+      background: #ff3159;
+
+      box-shadow:
+        0 12px 35px rgba(255,23,68,0.35);
+    }
+
+    .btn-secondary {
+      color: white;
+
+      background: rgba(255,255,255,0.05);
+
+      border: 1px solid var(--border);
+    }
+
+    .btn-secondary:hover {
+      transform: translateY(-3px);
+
+      background: rgba(255,255,255,0.09);
+    }
+
+
+    /* ================================
+       SECTION
+    ================================= */
+
+    section {
+      padding: 90px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-title h2 {
+      font-size: 36px;
+
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: var(--gray);
+
+      font-size: 14px;
+    }
+
+
+    /* ================================
+       SERVICES
+    ================================= */
+
+    .services {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 20px;
+    }
+
+    .service-card {
+      background:
+        linear-gradient(
+          145deg,
+          var(--card),
+          #09090e
+        );
+
+      border: 1px solid var(--border);
+
+      border-radius: 16px;
+
+      padding: 30px;
+
+      transition: 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-7px);
+
+      border-color:
+        rgba(255,23,68,0.35);
+
+      background:
+        linear-gradient(
+          145deg,
+          var(--card-hover),
+          #09090e
+        );
+
+      box-shadow:
+        0 20px 50px rgba(0,0,0,0.3);
+    }
+
+    .service-icon {
+      width: 55px;
+      height: 55px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background:
+        rgba(255,23,68,0.08);
+
+      border:
+        1px solid rgba(255,23,68,0.2);
+
+      border-radius: 12px;
+
+      font-size: 25px;
+
+      margin-bottom: 20px;
+    }
+
+    .service-card h3 {
+      margin-bottom: 10px;
+
+      font-size: 18px;
+    }
+
+    .service-card p {
+      color: var(--gray);
+
+      font-size: 14px;
+
+      line-height: 1.7;
+    }
+
+
+    /* ================================
+       PRICE
+    ================================= */
+
+    #harga {
+      background:
+        rgba(255,255,255,0.015);
+    }
+
+    .pricing {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 20px;
+    }
+
+    .price-card {
+      position: relative;
+
+      background:
+        linear-gradient(
+          145deg,
+          var(--card),
+          #09090e
+        );
+
+      border: 1px solid var(--border);
+
+      border-radius: 16px;
+
+      padding: 30px;
+
+      overflow: hidden;
+
+      transition: 0.3s;
+    }
+
+    .price-card:hover {
+      transform: translateY(-7px);
+
+      border-color:
+        rgba(255,23,68,0.35);
+    }
+
+    .price-card.popular {
+      border-color: var(--red);
+
+      box-shadow:
+        0 0 45px rgba(255,23,68,0.10);
+    }
+
+    .popular-label {
+      position: absolute;
+
+      top: 17px;
+      right: -31px;
+
+      background: var(--red);
+
+      color: white;
+
+      padding: 6px 38px;
+
+      font-size: 10px;
+
+      font-weight: 900;
+
+      transform: rotate(45deg);
+    }
+
+    .price-card h3 {
+      font-size: 21px;
+
+      margin-bottom: 15px;
+    }
+
+    .price {
+      font-size: 34px;
+
+      font-weight: 900;
+
+      color: var(--red);
+
+      margin-bottom: 23px;
+    }
+
+    .price-list {
+      list-style: none;
+
+      margin-bottom: 25px;
+    }
+
+    .price-list li {
+      color: var(--gray);
+
+      font-size: 14px;
+
+      padding: 8px 0;
+    }
+
+    .price-list li::before {
+      content: "✓";
+
+      color: var(--green);
+
+      font-weight: bold;
+
+      margin-right: 9px;
+    }
+
+    .price-card .btn {
+      width: 100%;
+    }
+
+
+    /* ================================
+       ORDER
+    ================================= */
+
+    .order-box {
+      max-width: 700px;
+
+      margin: auto;
+
+      padding: 35px;
+
+      background:
+        linear-gradient(
+          145deg,
+          var(--card),
+          #09090e
+        );
+
+      border:
+        1px solid var(--border);
+
+      border-radius: 18px;
+
+      box-shadow:
+        0 25px 70px rgba(0,0,0,0.25);
+    }
+
+    .form-group {
+      margin-bottom: 19px;
+    }
+
+    .form-group label {
+      display: block;
+
+      margin-bottom: 8px;
+
+      color: #ddd;
+
+      font-size: 13px;
+
+      font-weight: 700;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+
+      padding: 14px 15px;
+
+      color: white;
+
+      background: #07070c;
+
+      border:
+        1px solid rgba(255,255,255,0.10);
+
+      border-radius: 8px;
+
+      outline: none;
+
+      font-size: 14px;
+
+      transition: 0.2s;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: var(--red);
+
+      box-shadow:
+        0 0 0 3px rgba(255,23,68,0.08);
+    }
+
+    select {
+      cursor: pointer;
+    }
+
+    textarea {
+      min-height: 100px;
+
+      resize: vertical;
+    }
+
+    .total {
+      display: flex;
+
+      align-items: center;
+
+      justify-content: space-between;
+
+      padding: 18px;
+
+      margin: 23px 0;
+
+      border-radius: 10px;
+
+      background:
+        rgba(255,23,68,0.07);
+
+      border:
+        1px solid rgba(255,23,68,0.18);
+    }
+
+    .total span {
+      color: var(--gray);
+
+      font-size: 14px;
+    }
+
+    .total strong {
+      color: var(--red);
+
+      font-size: 24px;
+    }
+
+    .order-btn {
+      width: 100%;
+
+      background: var(--green);
+
+      color: #06140a;
+
+      font-size: 15px;
+
+      border: none;
+    }
+
+    .order-btn:hover {
+      transform: translateY(-2px);
+
+      filter: brightness(1.08);
+
+      box-shadow:
+        0 10px 25px rgba(37,211,102,0.15);
+    }
+
+
+    /* ================================
+       FAQ
+    ================================= */
+
+    .faq {
+      max-width: 750px;
+
+      margin: auto;
+    }
+
+    details {
+      background: var(--card);
+
+      border:
+        1px solid var(--border);
+
+      border-radius: 10px;
+
+      margin-bottom: 12px;
+
+      padding: 18px 20px;
+
+      transition: 0.2s;
+    }
+
+    details:hover {
+      border-color:
+        rgba(255,23,68,0.25);
+    }
+
+    summary {
+      cursor: pointer;
+
+      font-size: 14px;
+
+      font-weight: 700;
+    }
+
+    details p {
+      color: var(--gray);
+
+      font-size: 14px;
+
+      line-height: 1.7;
+
+      margin-top: 14px;
+    }
+
+
+    /* ================================
+       FOOTER
+    ================================= */
+
+    footer {
+      padding: 35px 20px;
+
+      text-align: center;
+
+      color: var(--gray);
+
+      font-size: 13px;
+
+      border-top:
+        1px solid var(--border);
+    }
+
+    footer strong {
+      color: var(--red);
+    }
+
+
+    /* ================================
+       FLOATING WHATSAPP
+    ================================= */
+
+    .wa-floating {
+      position: fixed;
+
+      right: 20px;
+      bottom: 20px;
+
+      width: 55px;
+      height: 55px;
+
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 50%;
+
+      background: var(--green);
+
+      color: white;
+
+      font-size: 25px;
+
+      text-decoration: none;
+
+      z-index: 900;
+
+      box-shadow:
+        0 8px 25px rgba(0,0,0,0.4);
+
+      transition: 0.25s;
+    }
+
+    .wa-floating:hover {
+      transform: scale(1.08);
+    }
+
+
+    /* ================================
+       RESPONSIVE
+    ================================= */
+
+    @media (max-width: 800px) {
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        padding-top: 120px;
+      }
+
+      .hero h1 {
+        font-size: 58px;
+
+        letter-spacing: -3px;
+      }
+
+      .services,
+      .pricing {
+        grid-template-columns: 1fr;
+      }
+
+      .order-box {
+        padding: 25px 20px;
+      }
+
+      section {
+        padding: 75px 18px;
+      }
+
+      .section-title h2 {
+        font-size: 30px;
+      }
+    }
+
+
+    @media (max-width: 450px) {
+
+      .hero h1 {
+        font-size: 48px;
+      }
+
+      .hero p {
+        font-size: 14px;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+      }
+
+      .hero-buttons .btn {
+        width: 100%;
+      }
+
+      .price {
+        font-size: 30px;
+      }
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+  <!-- =====================================
+       NAVBAR
+  ====================================== -->
+
+  <nav>
+
+    <div class="nav-container">
+
+      <div class="logo">
+        MIDNIGHT<span>JOKI</span>
+      </div>
+
+      <ul class="nav-links">
+
+        <li>
+          <a href="#home">
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a href="#layanan">
+            Layanan
+          </a>
+        </li>
+
+        <li>
+          <a href="#harga">
+            Harga
+          </a>
+        </li>
+
+        <li>
+          <a href="#order">
+            Order
+          </a>
+        </li>
+
+        <li>
+          <a href="#faq">
+            FAQ
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </nav>
+
+
+  <!-- =====================================
+       HERO
+  ====================================== -->
+
+  <section
+    class="hero"
+    id="home"
+  >
+
+    <div class="hero-content">
+
+      <div class="badge">
+        🏁 JASA JOKI MIDNIGHT RACING: TOKYO
+      </div>
+
+      <h1>
+        RIDE
+        <br>
+        <span>FASTER.</span>
+      </h1>
+
+      <p>
+        Jasa joki Midnight Racing: Tokyo Roblox.
+        Pilih jumlah yang kamu inginkan dan lakukan
+        order langsung melalui WhatsApp.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a
+          href="#harga"
+          class="btn btn-primary"
+        >
+          💰 Lihat Harga
+        </a>
+
+        <a
+          href="#order"
+          class="btn btn-secondary"
+        >
+          🏎️ Order Sekarang
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================
+       LAYANAN
+  ====================================== -->
+
+  <section id="layanan">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>
+          Layanan Kami
+        </h2>
+
+        <p>
+          Pilih paket sesuai kebutuhan kamu.
+        </p>
+
+      </div>
+
+
+      <div class="services">
+
+
+        <div class="service-card">
+
+          <div class="service-icon">
+            🏎️
+          </div>
+
+          <h3>
+            Joki Money
+          </h3>
+
+          <p>
+            Jasa farming money Midnight Racing:
+            Tokyo sesuai jumlah yang kamu pesan.
+          </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+          <div class="service-icon">
+            💰
+          </div>
+
+          <h3>
+            Farming
+          </h3>
+
+          <p>
+            Pilih jumlah 1M, 5M, atau 10M
+            dengan harga yang sudah tersedia.
+          </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+          <div class="service-icon">
+            🏆
+          </div>
+
+          <h3>
+            Custom
+          </h3>
+
+          <p>
+            Jika membutuhkan target lain,
+            silakan hubungi admin melalui WhatsApp.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================
+       HARGA
+  ====================================== -->
+
+  <section id="harga">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>
+          Harga Joki
+        </h2>
+
+        <p>
+          Harga joki Midnight Racing: Tokyo
+        </p>
+
+      </div>
+
+
+      <div class="pricing">
+
+
+        <!-- 1M -->
+
+        <div class="price-card">
+
+          <h3>
+            1M
+          </h3>
+
+          <div class="price">
+            Rp8.000
+          </div>
+
+          <ul class="price-list">
+
+            <li>
+              Target 1M
+            </li>
+
+            <li>
+              Update progress
+            </li>
+
+            <li>
+              Proses sesuai antrean
+            </li>
+
+          </ul>
+
+          <a
+            href="#order"
+            class="btn btn-secondary pilih-paket"
+            data-package="1M"
+            data-price="8000"
+          >
+            Pilih Paket
+          </a>
+
+        </div>
+
+
+        <!-- 5M -->
+
+        <div class="price-card popular">
+
+          <div class="popular-label">
+            POPULER
+          </div>
+
+          <h3>
+            5M
+          </h3>
+
+          <div class="price">
+            Rp40.000
+          </div>
+
+          <ul class="price-list">
+
+            <li>
+              Target 5M
+            </li>
+
+            <li>
+              Update progress
+            </li>
+
+            <li>
+              Proses sesuai antrean
+            </li>
+
+          </ul>
+
+          <a
+            href="#order"
+            class="btn btn-primary pilih-paket"
+            data-package="5M"
+            data-price="40000"
+          >
+            Pilih Paket
+          </a>
+
+        </div>
+
+
+        <!-- 10M -->
+
+        <div class="price-card">
+
+          <h3>
+            10M
+          </h3>
+
+          <div class="price">
+            Rp80.000
+          </div>
+
+          <ul class="price-list">
+
+            <li>
+              Target 10M
+            </li>
+
+            <li>
+              Update progress
+            </li>
+
+            <li>
+              Proses sesuai antrean
+            </li>
+
+          </ul>
+
+          <a
+            href="#order"
+            class="btn btn-secondary pilih-paket"
+            data-package="10M"
+            data-price="80000"
+          >
+            Pilih Paket
+          </a>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================
+       ORDER
+  ====================================== -->
+
+  <section id="order">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>
+          Order Sekarang
+        </h2>
+
+        <p>
+          Isi form kemudian lanjut ke WhatsApp.
+        </p>
+
+      </div>
+
+
+      <div class="order-box">
+
+        <form id="orderForm">
+
+
+          <!-- USERNAME -->
+
+          <div class="form-group">
+
+            <label>
+              Username Roblox
+            </label>
+
+            <input
+              type="text"
+              id="username"
+              placeholder="Contoh: Player123"
+              required
+            >
+
+          </div>
+
+
+          <!-- PACKAGE -->
+
+          <div class="form-group">
+
+            <label>
+              Pilih Paket
+            </label>
+
+            <select
+              id="package"
+              required
+            >
+
+              <option
+                value=""
+                data-price="0"
+              >
+                -- Pilih Paket --
+              </option>
+
+              <option
+                value="1M"
+                data-price="8000"
+              >
+                1M - Rp8.000
+              </option>
+
+              <option
+                value="5M"
+                data-price="40000"
+              >
+                5M - Rp40.000
+              </option>
+
+              <option
+                value="10M"
+                data-price="80000"
+              >
+                10M - Rp80.000
+              </option>
+
+            </select>
+
+          </div>
+
+
+          <!-- TARGET -->
+
+          <div class="form-group">
+
+            <label>
+              Target / Keterangan
+            </label>
+
+            <textarea
+              id="target"
+              placeholder="Contoh: Farming money sampai target..."
+              required
+            ></textarea>
+
+          </div>
+
+
+          <!-- CATATAN -->
+
+          <div class="form-group">
+
+            <label>
+              Catatan Tambahan
+            </label>
+
+            <textarea
+              id="note"
+              placeholder="Catatan tambahan (opsional)"
+            ></textarea>
+
+          </div>
+
+
+          <!-- TOTAL -->
+
+          <div class="total">
+
+            <span>
+              Total Harga
+            </span>
+
+            <strong id="totalPrice">
+              Rp0
+            </strong>
+
+          </div>
+
+
+          <!-- BUTTON -->
+
+          <button
+            type="submit"
+            class="btn order-btn"
+          >
+            💬 ORDER VIA WHATSAPP
+          </button>
+
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================
+       FAQ
+  ====================================== -->
+
+  <section id="faq">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>
+          FAQ
+        </h2>
+
+        <p>
+          Pertanyaan yang sering ditanyakan.
+        </p>
+
+      </div>
+
+
+      <div class="faq">
+
+
+        <details>
+
+          <summary>
+            Bagaimana cara order?
+          </summary>
+
+          <p>
+            Pilih paket 1M, 5M, atau 10M,
+            masukkan username Roblox dan target,
+            kemudian tekan tombol Order Via WhatsApp.
+          </p>
+
+        </details>
+
+
+        <details>
+
+          <summary>
+            Berapa harga 1M?
+          </summary>
+
+          <p>
+            Harga paket 1M adalah Rp8.000.
+          </p>
+
+        </details>
+
+
+        <details>
+
+          <summary>
+            Berapa harga 5M?
+          </summary>
+
+          <p>
+            Harga paket 5M adalah Rp40.000.
+          </p>
+
+        </details>
+
+
+        <details>
+
+          <summary>
+            Berapa harga 10M?
+          </summary>
+
+          <p>
+            Harga paket 10M adalah Rp80.000.
+          </p>
+
+        </details>
+
+
+        <details>
+
+          <summary>
+            Apakah bisa custom?
+          </summary>
+
+          <p>
+            Bisa. Untuk target di luar paket,
+            silakan hubungi admin melalui WhatsApp.
+          </p>
+
+        </details>
+
+
+        <details>
+
+          <summary>
+            Apakah perlu memberikan password?
+          </summary>
+
+          <p>
+            Jangan membagikan password akun melalui website.
+            Gunakan metode akses yang aman dan sesuai
+            dengan aturan serta kebijakan Roblox.
+          </p>
+
+        </details>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================
+       FOOTER
+  ====================================== -->
+
+  <footer>
+
+    © 2026
+    <strong>MidnightJoki</strong>.
+
+    <br>
+
+    Jasa Joki Midnight Racing: Tokyo.
+
+  </footer>
+
+
+  <!-- =====================================
+       FLOATING WHATSAPP
+  ====================================== -->
+
+  <a
+    class="wa-floating"
+    href="https://wa.me/6282172329429"
+    target="_blank"
+    title="Chat WhatsApp"
+  >
+    💬
+  </a>
+
+
+  <!-- =====================================
+       JAVASCRIPT
+  ====================================== -->
+
+  <script>
+
+    /*
+      =====================================
+      KONFIGURASI WHATSAPP
+      =====================================
+
+      Nomor:
+      082172329429
+
+      Format WhatsApp:
+      6282172329429
+    */
+
+    const nomorWhatsApp = "6282172329429";
+
+
+    /*
+      =====================================
+      FORMAT RUPIAH
+      =====================================
+    */
+
+    function formatRupiah(angka) {
+
+      return new Intl.NumberFormat(
+        "id-ID",
+        {
+          style: "currency",
+          currency: "IDR",
+          minimumFractionDigits: 0
+        }
+      ).format(angka);
+
+    }
+
+
+    /*
+      =====================================
+      ELEMENT
+      =====================================
+    */
+
+    const packageSelect =
+      document.getElementById("package");
+
+    const totalPrice =
+      document.getElementById("totalPrice");
+
+    const orderForm =
+      document.getElementById("orderForm");
+
+
+    /*
+      =====================================
+      UPDATE TOTAL HARGA
+      =====================================
+    */
+
+    packageSelect.addEventListener(
+      "change",
+      function () {
+
+        const selected =
+          this.options[
+            this.selectedIndex
+          ];
+
+        const price =
+          Number(
+            selected.dataset.price || 0
+          );
+
+        totalPrice.textContent =
+          formatRupiah(price);
+
+      }
+    );
+
+
+    /*
+      =====================================
+      PILIH PAKET DARI CARD
+      =====================================
+    */
+
+    const pilihPaket =
+      document.querySelectorAll(
+        ".pilih-paket"
+      );
+
+
+    pilihPaket.forEach(
+      function (button) {
+
+        button.addEventListener(
+          "click",
+          function () {
+
+            const paket =
+              this.dataset.package;
+
+            packageSelect.value =
+              paket;
+
+
+            const option =
+              packageSelect.options[
+                packageSelect.selectedIndex
+              ];
+
+
+            const price =
+              Number(
+                option.dataset.price || 0
+              );
+
+
+            totalPrice.textContent =
+              formatRupiah(price);
+
+          }
+        );
+
+      }
+    );
+
+
+    /*
+      =====================================
+      SUBMIT ORDER
+      =====================================
+    */
+
+    orderForm.addEventListener(
+      "submit",
+      function (event) {
+
+        event.preventDefault();
+
+
+        /*
+          Ambil data form
+        */
+
+        const username =
+          document
+            .getElementById("username")
+            .value
+            .trim();
+
+
+        const paket =
+          packageSelect.value;
+
+
+        const target =
+          document
+            .getElementById("target")
+            .value
+            .trim();
+
+
+        const note =
+          document
+            .getElementById("note")
+            .value
+            .trim();
+
+
+        /*
+          Cek paket
+        */
+
+        if (!paket) {
+
+          alert(
+            "Silakan pilih paket terlebih dahulu."
+          );
+
+          packageSelect.focus();
+
+          return;
+
+        }
+
+
+        /*
+          Ambil harga
+        */
+
+        const option =
+          packageSelect.options[
+            packageSelect.selectedIndex
+          ];
+
+
+        const price =
+          Number(
+            option.dataset.price || 0
+          );
+
+
+        /*
+          Buat pesan WhatsApp
+        */
+
+        const message =
+
+`Halo MidnightJoki! 👋
+
+Saya ingin melakukan order joki Midnight Racing: Tokyo.
+
+👤 Username Roblox:
+${username}
+
+📦 Paket:
+${paket}
+
+🎯 Target:
+${target}
+
+📝 Catatan:
+${note || "-"}
+
+💰 Total:
+${formatRupiah(price)}
+
+Mohon info untuk proses selanjutnya. Terima kasih!`;
+
+
+        /*
+          Buat URL WhatsApp
+        */
+
+        const whatsappURL =
+          "https://wa.me/" +
+          nomorWhatsApp +
+          "?text=" +
+          encodeURIComponent(message);
+
+
+        /*
+          Buka WhatsApp
+        */
+
+        window.open(
+          whatsappURL,
+          "_blank"
+        );
+
+      }
+    );
+
+  </script>
+
+
+</body>
+</html>
